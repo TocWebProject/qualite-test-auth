@@ -1,0 +1,14 @@
+# Hide a specific file
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Disable index view
+Options -Indexes
+
+ErrorDocument 404 /index.php?action=404
+
+
+
+

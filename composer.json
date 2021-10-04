@@ -1,0 +1,13 @@
+{
+    "name": "testsqualite/tp01",
+    "description": "TP01 - Tests & Qualité - Git/Jenkins/SonarQube",
+    "authors": [
+        {
+            "name": "Lucas - Yannick - Yann",
+            "email": "rioualy@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
