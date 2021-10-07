@@ -24,15 +24,18 @@
             <p class="text-gray-100">
                 Connectez-vous
             </p>
-            <form action="" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+            <form class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto" action="./index.php?action=checkLogIn" id="getForm" method="POST">
                 <div class="pb-2 pt-4">
-                    <input type="email" name="email" id="email" placeholder="Email" class="block w-full p-4 text-lg rounded-sm bg-black">
+                    <input type="email" name="emailUser" id="inputEmail" placeholder="Email" autocomplete="username" required="" autofocus="" class="block w-full p-4 text-lg rounded-sm bg-black">
                 </div>
                 <div class="pb-2 pt-4">
-                    <input class="block w-full p-4 text-lg rounded-sm bg-black" type="password" name="password" id="password" placeholder="Mot de pass">
+                    <input type="password" class="block w-full p-4 text-lg rounded-sm bg-black" type="password" name="pwdUser" id="inputPassword" autocomplete="current-password" placeholder="Mot de passe" required="">
                 </div>
                 <div class="px-4 pb-2 pt-4">
-                    <button class="uppercase block w-3/4 mx-auto p-2 text-md rounded-lg bg-blue-700 hover:bg-blue-800 focus:outline-none">Connectez-vous</button>
+                    <button type="submit" name="submit_logIn" value="connexion" class="uppercase block w-3/4 mx-auto p-2 text-md rounded-md bg-blue-700 hover:bg-blue-800 focus:outline-none">Connectez-vous</button>
+                </div>
+                <div class="px-4 pb-2 pt-4">
+                    <div class="block w-3/4 mx-auto p-2 text-md text-red-900 rounded-md bg-red-100"><?php if(isset($errors)){echo $errors;} ?></div>
                 </div>
             </form>
         </div>

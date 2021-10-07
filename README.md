@@ -25,7 +25,7 @@
     <li>Nginx: 1.21.3</li>
 </ul>
 
-## Stucture MVC et Composer
+## Stucture MVC et utilisation de Composer
 <ul>    
     <li>Utilisation de composer</li>
     <li>Utilisation du package phpdotenv pour protéger les accès sensibles dans le code<li>
@@ -54,5 +54,5 @@
 </ul>
 
 ## Screenshhot
-<img src="src/Assets/img/screenshot-login.png" style="width: 50%">
+<img src="src/Assets/img/screenshot-login.png" style="width: 100%">
 
