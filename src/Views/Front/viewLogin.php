@@ -24,7 +24,7 @@
             <p class="text-gray-100">
                 Connectez-vous
             </p>
-            <form class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto" action="./index.php?action=checkLogIn" id="getForm" method="POST">
+            <form class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto" action="./index.php?action=checkLogIn" id="getForm" method="POST" accept-charset="UTF-8">
                 <div class="pb-2 pt-4">
                     <input type="email" name="emailUser" id="inputEmail" placeholder="Email" autocomplete="username" required="" autofocus="" class="block w-full p-4 text-lg rounded-sm bg-black">
                 </div>
@@ -35,7 +35,7 @@
                     <button type="submit" name="submit_logIn" value="connexion" class="uppercase block w-3/4 mx-auto p-2 text-md rounded-md bg-blue-700 hover:bg-blue-800 focus:outline-none">Connectez-vous</button>
                 </div>
                 <div class="px-4 pb-2 pt-4">
-                    <div class="block w-3/4 mx-auto p-2 text-md text-red-900 rounded-md bg-red-100"><?php if(isset($errors)){echo $errors;} ?></div>
+                    <?php if(isset($errors)){echo('<div class="block w-3/4 mx-auto p-2 text-sm text-red-900 rounded-md bg-red-100">Email ou Mot de passe invalide</div>');} ?>
                 </div>
             </form>
         </div>

@@ -27,7 +27,7 @@ function getCheckLogin($checkEmailUser, $checkPwdUser)
 
     // Si le Model renvoie false - Il y a une erreur
     if($newLogIn == false){
-        $errors = 'Email ou mot de passe invalide';
+        $errors = true;
         require ('src/Views/Front/viewLogIn.php');
     } 
     // Si $newLogin renvoie true. Les identifiants corespondent, l'utilisateur peut avoir accès au dashboard avec le nombre de commentaires signalés. 

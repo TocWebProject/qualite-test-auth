@@ -7,7 +7,7 @@ class UsersManager extends Manager
     {
         // Récupération des informations de l'user dans la base de donnée
         $db = $this->dbConnect();
-        $query = $db->prepare('SELECT * FROM userLogin WHERE emailUser = ?');
+        $query = $db->prepare('SELECT * FROM usersLogin WHERE emailUser = ?');
         $query->execute(array($mail));
         $row=$query->fetch(PDO::FETCH_ASSOC);
 
@@ -16,13 +16,10 @@ class UsersManager extends Manager
             return false;
         // Si il y a un résultat -> Vérification de la corespondance entre les informations entre la saisie de l'utilisateur et les informations de la base de donnée.
         } else {
-            $isPasswordCorrect = password_verify($pwd, $row["pwdUser"]);
-            // Si le mdp est correct. 
+            $isPasswordCorrect = password_verify($pwd, $row['pwdUser']);
             if ($isPasswordCorrect) {
-        
-            $_SESSION['userid'] = $row['emailUser'];
-            return true;
-
+                $_SESSION['userid'] = $row['emailUser'];
+                return true;
             } else {
             // Si le mdp est incorrect.    
                 return false;

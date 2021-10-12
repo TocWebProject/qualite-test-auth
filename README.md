@@ -41,9 +41,9 @@
 ## TODO
 <ul>
     <li>Finir les installation des Machines Virtuelles</li>
-    <li>Préparer correctement le formulaire View: viewLogin.php avec retour $errors</li>
-    <li>Création bdd: Préparer une table users dans une database</li>
-    <li>Tester la connection PDO dans le Model Manager.php</li>
+    <li>Préparer correctement le formulaire View: viewLogin.php avec retour $errors -> OK</li>
+    <li>Création bdd: Préparer une table users dans une database -> OK</li>
+    <li>Tester la connection PDO dans le Model Manager.php -> OK</li>
     <li>Configuration avec Apache faite via .htaccess (le projet marche sous wamp/mamp) // A faire -> Créer un fichier nginx.conf équivalent pour que le site fonctionne avec nginx sur la VM</li>
 </ul>
 

@@ -29,9 +29,6 @@ switch ($_GET['action']) {
     case 'checkLogIn' :
         if(isset($_POST['submit_logIn'])){
 
-            // Echo et Die en attendant de faire la connexion à la Bdd
-            print_r('Form Submited'); die();
-
             // Si les champs existent et qu'ils ne sont pas vides.
             if(isset($_POST['emailUser'], $_POST['pwdUser']) AND !empty($_POST['emailUser']) AND !empty($_POST['pwdUser'])) {
                 // Sécurisation des valeurs transmise par l'utilisateur:
@@ -54,6 +51,6 @@ switch ($_GET['action']) {
         break;
 
     default:
-    login();
+        login();
     break;
 }
