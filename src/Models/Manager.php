@@ -6,7 +6,7 @@ class Manager
     {
         try
         {
-            $db = new PDO('mysql:host=********;dbname=********;charset=utf8', '***********', 'root');
+            $db = new PDO('mysql:host=********;dbname=********;charset=utf8', '***********', '********');
             return $db;
         }
         catch(Exception $e)
