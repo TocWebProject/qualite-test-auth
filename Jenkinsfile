@@ -17,7 +17,7 @@ pipeline {
                 scannerHome = tool 'qualite-tests-auth'
             }
             steps {
-                withSonarQubeEnv(installationName: 'SonarQube Token for registration', credentialsId: 'SonarQubeToken') {
+                withSonarQubeEnv(installationName: 'qualite-tests-auth', credentialsId: 'SonarQubeToken') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
                 timeout(time: 10, unit: 'MINUTES') {
