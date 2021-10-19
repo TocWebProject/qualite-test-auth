@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Sonarqube') {
             environment {
-                scannerHome = tool 'qualite-tests-auth'
+                scannerHome = tool 'qualitetestsauth'
             }
             steps {
                 withSonarQubeEnv('sonarqube') {
