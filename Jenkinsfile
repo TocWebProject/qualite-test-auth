@@ -14,10 +14,10 @@ pipeline {
         }
         stage('Sonarqube') {
             environment {
-                scannerHome = tool 'qualitetestsauth'
+                scannerHome = tool 'qualite-tests-auth'
             }
             steps {
-                withSonarQubeEnv('sonarqube') {
+                withSonarQubeEnv(installationName: 'SonarQube Token for registration', credentialsId: 'SonarQubeToken') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
                 timeout(time: 10, unit: 'MINUTES') {
