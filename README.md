@@ -25,18 +25,8 @@
     <li>Nginx: 1.21.3</li>
 </ul>
 
-## Stucture MVC et utilisation de Composer
-<ul>    
-    <li>Utilisation de composer</li>
-    <li>Utilisation du package phpdotenv pour protéger les accès sensibles dans le code<li>
-</ul>
-
-## Installation
-<ul>
-    <li>cd project directory</li>
-    <li>composer install</li>
-    <li>ouvrir le fichier .env.example, y ajouter les accès db et retirer l'extension .example - le fichier .env est ajouté au gitgniore pour n'être jamais révéler dans notre GitHub</li>
-</ul>
+## Stucture MVC de l'app
+<img src="src/Assets/img/mvc-app.png" style="width: 100%">
 
 ## TODO
 <ul>
@@ -49,6 +39,7 @@
     <li>Préparer correctement le formulaire View: viewLogin.php avec retour $errors -> OK</li>
     <li>Création bdd: Préparer une table users dans une database -> OK</li>
     <li>Tester la connection PDO dans le Model Manager.php -> OK</li>
+    <li>Utilisation du processus d'intégration continue et tests sans VM -> OK</li>
 </ul>
 
 ## Axes d'amélioration
