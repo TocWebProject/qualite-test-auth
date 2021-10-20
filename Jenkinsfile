@@ -13,9 +13,9 @@ pipeline {
             }
         }
         stage('Sonarqube') {
-            tools {
-                jdk "jdk8" 
-            }
+            // tools {
+            //     jdk "jdk8" 
+            // }
             environment {
                 scannerHome = tool 'qualite-tests-auth'
             }

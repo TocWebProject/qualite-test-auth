@@ -2,3 +2,7 @@
 echo .DS_Store >> .gitignore
 .env
 .DS_Store
+
+# SonarQube
+.scannerwork
+
